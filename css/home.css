@@ -92,8 +92,7 @@
   .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
@@ -209,11 +208,10 @@
 
       padding-block: 10%;
 
-      height: 85vh;
+      height: 120vh;
     }
 
     header#home .video-wrapper {
-      margin-block: 0;
     }
 
     header#home .blush {
@@ -266,12 +264,11 @@
   
   
     header#home .content {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-  
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
+
+      padding-inline: 10%;
     }
   
     header#home .text {
@@ -281,8 +278,8 @@
 
       display: flex;
       flex-direction: column;
-      text-align: left;
-      align-items: start;
+      text-align: center;
+      align-items: center;
   
       position: relative;
       z-index: 2;
@@ -299,6 +296,8 @@
       line-height: 1;
       color: #f8fffd;
       margin-bottom: 0;
+
+      width: 80%;
     }
 
     header#home .content h1 span {
@@ -320,15 +319,14 @@
     }
 
     header#home .content a.mobile {
-      display: none;
     }
 
     header#home .content a button.mobile {
-      display: none;
+      display: inherit;
     }
 
     header#home .content a button.desktop {
-      display: inherit;
+      display: none;
     }
   }
   
@@ -347,6 +345,7 @@
 
     header#home .content h1 {
       font-size: 4rem;
+      width: 80%;
     }
 
     header#home .content h1 span {

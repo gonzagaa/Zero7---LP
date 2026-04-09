@@ -1579,6 +1579,22 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+<script>
+    const videoWrapper = document.getElementById("videoWrapper");
+const videoCover = document.getElementById("videoCover");
+const videoTrigger = document.getElementById("videoTrigger");
+const youtubeVideo = document.getElementById("youtubeVideo");
+
+function playVideo() {
+  youtubeVideo.src = youtubeVideo.dataset.src;
+  youtubeVideo.style.display = "block";
+  videoCover.style.display = "none";
+  videoTrigger.style.display = "none";
+}
+
+videoTrigger.addEventListener("click", playVideo);
+  </script>
+
   <script>
   // gera e guarda o eventID ANTES para casar Pixel + API
   window.__eventID = '_' + Math.random().toString(36).slice(2, 11);
