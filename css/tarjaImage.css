@@ -1,0 +1,125 @@
+.tarjaImage img {
+    width: 100%;
+}
+
+.tarjaImage img.desktop {
+    display: none;
+}
+
+#home.activeTarjaImage {
+  padding-top: 15.2rem;
+}
+
+#home.activeTarjaImage .image img.mobile {
+    top: 18%;
+}
+
+#navigation.activeTarjaImage {
+    top: 11.5rem;
+    /* top: 8.5rem; */
+}
+
+.countdown--promo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.4rem;
+      font-weight: 800;
+
+      background: linear-gradient(45deg, #ffffff, #e2e2e2);
+      padding-block: .5rem;
+}
+
+.countdown--promo div {
+      display: flex;
+      align-items: end;
+      color: #000000;
+}
+
+.countdown--promo .label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: -1px;
+}
+
+.tarjaImage h3 {
+    color: #000000;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.tarjaImage p.text {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (min-width: 1080px) {
+    nav#navigation.activeTarjaImage {
+        /* top: 8.5rem; */
+        top: 11.9rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    header#home.activeTarjaImage {
+        padding-top: 10rem;
+    }
+
+    div.tarjaImage {
+        width: calc(100% - 200px);
+        left: 100px;
+        top: 2rem;
+    }
+
+    div.tarjaImage img {
+        border-radius: 2rem 2rem 0 0;
+        border-radius: 0;
+    }
+
+    div.tarjaImage img.mobile {
+        display: none;
+    }
+
+    div.tarjaImage img.desktop {
+        display: inherit;
+    }
+
+    div.tarjaImage h3 {
+        position: absolute;
+        width: max-content;
+        padding: .5rem 3rem;
+        font-size: 1rem;
+        top: 13.2%;
+        z-index: 101;
+        left: 45%;
+        transform: translate(0, -50%);
+        border-radius: .5rem;
+
+        margin-top: 0;
+    }
+
+    /* asasa */
+}
+
+@media (min-width: 1700px) {
+      div.tarjaImage {
+        width: calc(100% - 340px);
+        left: 170px;
+        top: 2rem;
+      } 
+
+      nav#navigation.activeTarjaImage {
+        top: 12.9rem;
+        /* top: 9.5rem; */
+    }
+}
+
+@media (min-width: 2500px) {
+    nav#navigation.activeTarjaImage {
+        top: 13.8rem;
+        /* top: 12rem; */
+    }
+}
